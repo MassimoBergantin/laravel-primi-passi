@@ -12,7 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('home');
+});
+
+// CREO UNA NUOVA ROTTA ROUTES
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('larablade',
+    ['creator' => 'Massimo']
+    );
 });
+
+
+
