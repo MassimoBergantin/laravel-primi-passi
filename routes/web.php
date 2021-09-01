@@ -16,11 +16,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-// CREO UNA NUOVA ROTTA ROUTES
+// CREO UNA NUOVA ROTTA (ROUTES)
 
 Route::get('/', function () {
     return view('larablade',
-    ['creator' => 'Massimo']
+    ['creator' => 'Massimo'],
+    ['framework' => 'Larablade']
     );
 });
 
